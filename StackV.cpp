@@ -1,5 +1,9 @@
 #include "StackV.h"
 
+void Stack::size(){
+	return data.size();
+}
+
 void Stack::push(int m){
 data.push_back(m);
 }
