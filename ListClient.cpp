@@ -2,13 +2,16 @@
 #include "List.h"
 
 using namespace std;
-
-int main()
-{
+void display();
+int main(){
 
  List L1, L2;
-
+ L1.insert(5,1);
+ L2.insert(6,1);
+ L1.display();
  //Do some stuff with L1, L2, ...
  // ...
 
 }
+
+

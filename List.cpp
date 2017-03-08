@@ -16,6 +16,7 @@ class List::Node //self-referential Node class
 	};//end Node class definition (can only be seen by the List class)
 
 
+
 List::~List()
 {
     while(num_elements > 0)
@@ -90,6 +91,13 @@ void List::remove(int k)
 	delete delPtr;
 	num_elements--;
 	}
+	
+	void List::display(){
+		for(Node*currPtr=frontPtr;currPtr!=nullptr;currPtr=currPtr->link){
+		cout<<currPtr->data<<"";
+		}
+	}	
+	
 	
 	//Implementations of missing operations
 	
