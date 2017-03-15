@@ -92,10 +92,19 @@ void List::remove(int k)
 	num_elements--;
 	}
 	
-	void List::display(){
-		for(Node*currPtr=frontPtr;currPtr!=nullptr;currPtr=currPtr->link){
-		cout<<currPtr->data<<"";
+	int List::getAt(int j){
+		Node* tmpPtr=frontPtr;
+		for (int loc=1; loc!=j; loc++){
+			tmpPtr = tmpPtr->link;
 		}
+		return tmpPtr -> data;
+		}
+		
+	void List:: clear(){
+		while (num_elements!= 0)
+		{
+			remove(1);
+				}
 	}	
 	
 	
