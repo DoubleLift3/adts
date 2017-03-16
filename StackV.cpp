@@ -1,6 +1,6 @@
 #include "StackV.h"
 
-void Stack::size(){
+int Stack::size(){
 	return data.size();
 }
 
@@ -12,12 +12,10 @@ void Stack::pop(){
 data.pop_back();
 }
 
-void Stack::top(){
+int Stack::top(){
 return data [data.size()-1];
 }
 
 void Stack::clear(){
-	while(int i=0; i<data.size(); i++){
-	data.pop_back();
-}
+	data.clear();
 }

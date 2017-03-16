@@ -100,6 +100,13 @@ void List::remove(int k)
 		return tmpPtr -> data;
 		}
 		
+		void List::display()
+		{
+			for(Node*currPtr=frontPtr;currPtr!=nullptr;currPtr=currPtr->link){
+			cout<<currPtr->data<<"";
+		}
+		}
+		
 	void List:: clear(){
 		while (num_elements!= 0)
 		{
